@@ -1,0 +1,29 @@
+name: cloud
+
+services:
+  web:
+    image: fernandokoelle/nginx_proxy
+    ports:
+      - "8000:80"
+    depends_on:
+      - api
+    restart: on-failure
+  api:
+    hostname: api
+    image: fernandokoelle/scraping_de_dados_b3:latest
+    environment:
+      DATABASE_URL: postgresql://cloud:secret@db:5432/cloud
+      SECRET_KEY: ${SECRET_KEY:-supersegredo}
+      ADMIN_SECRET: ${ADMIN_SECRET:-123}
+    depends_on:
+      - db
+    restart: on-failure
+  
+  db:
+    hostname: db
+    image: postgres:latest
+    environment: 
+      POSTGRES_DB: ${POSTGRES_DB:-cloud}
+      POSTGRES_USER: ${POSTGRES_USER:-cloud}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+    restart: on-failure
