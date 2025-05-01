@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/Overview/</loc>
+         <lastmod>2025-05-01</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/Rodando_Localmente/</loc>
+         <lastmod>2025-05-01</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/compose/</loc>
+         <lastmod>2025-05-01</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/dockerhub/</loc>
+         <lastmod>2025-05-01</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/seguranca/</loc>
+         <lastmod>2025-05-01</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/utilizacao/</loc>
+         <lastmod>2025-05-01</lastmod>
+    </url>
 </urlset>
