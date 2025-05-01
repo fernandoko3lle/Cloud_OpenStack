@@ -666,12 +666,10 @@
 <p>⚠️ O campo <code>admin_secret</code> é obrigatório e deve coincidir com o valor da variável <code>ADMIN_SECRET</code>.</p>
 </blockquote>
 <h3 id="requisicao-de-registro">📤 Requisição de Registro</h3>
-<p><img src="../img/reg_request.png" alt="Requisição de Registro" width="800"/></p>
+<p><img src="img/reg_request.png" alt="Requisição de Registro" width="800"/></p>
 <hr />
 <h3 id="resposta-esperada">📥 Resposta Esperada</h3>
-<p><img alt="Resposta de Registro" src="../img/reg_response.png" />{ width="800px" }</p>
-<!-- <img src="../img/reg_response.png" alt="Resposta de Registro" width="800"/> -->
-
+<p><img src="img/reg_response.png" alt="Resposta de Registro" width="800"/></p>
 <hr />
 <h2 id="login">🔑 Login</h2>
 <p>Envie um <code>POST</code> para <code>/login</code> com:</p>
@@ -686,10 +684,10 @@
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="requisicao-de-login">📤 Requisição de Login</h3>
-<p><img src="../img/log_request.png" alt="Requisição de Login" width="800"/></p>
+<p><img src="img/log_request.png" alt="Requisição de Login" width="800"/></p>
 <hr />
 <h3 id="resposta-com-token">📥 Resposta com Token</h3>
-<p><img src="/img/log_response.png" alt="Resposta de Login" width="800"/></p>
+<p><img src="img/log_response.png" alt="Resposta de Login" width="800"/></p>
 <hr />
 <hr />
 <h2 id="consulta-rota-protegida">🔎 Consulta (Rota Protegida)</h2>
@@ -700,19 +698,19 @@
 <h2 id="erros-comuns-e-uso-correto-do-token-jwt">⚠️ Erros comuns e uso correto do token JWT</h2>
 <p>Ao testar via navegador, é comum esquecer de incluir o token JWT, o que resulta em erro de autenticação.</p>
 <h3 id="tentativa-de-acesso-sem-autenticacao">❌ Tentativa de acesso sem autenticação</h3>
-<p><img src="/img/err_token.png" alt="Erro de token ausente" width="800"/></p>
+<p><img src="img/err_token.png" alt="Erro de token ausente" width="800"/></p>
 <hr />
 <h3 id="onde-adicionar-o-token-recebido-no-login">🔐 Onde adicionar o token recebido no login</h3>
 <p>No campo <strong>Authorization</strong>, selecione o tipo <code>Bearer</code> e cole o token JWT retornado:</p>
-<p><img src="/img/token.png" alt="Campo de autorização com token" width="800"/></p>
+<p><img src="img/token.png" alt="Campo de autorização com token" width="800"/></p>
 <hr />
 <h3 id="como-identificar-que-o-token-foi-adicionado-corretamente">🔒 Como identificar que o token foi adicionado corretamente</h3>
 <p>Se o token estiver presente, um <strong>ícone de cadeado fechado</strong> deve aparecer na interface:</p>
-<p><img src="/img/simb.png" alt="Símbolo de autenticação ativa" width="800"/></p>
+<p><img src="img/simb.png" alt="Símbolo de autenticação ativa" width="800"/></p>
 <hr />
 <h3 id="consulta-bem-sucedida-apos-autenticacao">✅ Consulta bem-sucedida após autenticação</h3>
 <p>Após o token ser corretamente inserido, a requisição protegida <code>/consultar</code> retorna os dados esperados:</p>
-<p><img src="/img/consulta.png" alt="Consulta com token" width="800"/></p>
+<p><img src="img/consulta.png" alt="Consulta com token" width="800"/></p>
 </details>
 
 
