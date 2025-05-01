@@ -52,7 +52,7 @@ A aplicação é executada com Docker Compose e composta por três serviços: **
 O fluxo pode ser representado da seguinte forma:
 
 <p align="center">
-  <img src="../img/fluxograma.png" alt="Fluxo de Arquitetura" width="450"/>
+  <img src="img/fluxograma.png" alt="Fluxo de Arquitetura" width="450"/>
 </p>
 
 ---
