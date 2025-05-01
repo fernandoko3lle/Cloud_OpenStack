@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fernandoko3lle.github.io/Cloud_OpenStack/index.html">
+        <link rel="canonical" href="https://fernandoko3lle.github.io/Cloud_OpenStack/compose.html">
       
       
+        <link rel="prev" href="dockerhub.html">
       
-        <link rel="next" href="dockerhub.html">
+      
+        <link rel="next" href="Rodando_Localmente.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>📊 API RESTful com Autenticação JWT e Scraping de Dados da B3</title>
+        <title>⚙️ Docker Compose - 📊 API RESTful com Autenticação JWT e Scraping de Dados da B3</title>
       
     
     
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#documentacao-api-de-scraping-b3-com-autenticacao-jwt" class="md-skip">
+        <a href="#arquivo-docker-composeyaml" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📊 Overview
+              ⚙️ Docker Compose
             
           </span>
         </div>
@@ -191,32 +193,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    📊 Overview
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -227,62 +207,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#explicacao-do-projeto" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Explicação do Projeto
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#endpoints-da-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      📦 Endpoints da API
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#estrutura-do-projeto" class="md-nav__link">
-    <span class="md-ellipsis">
-      📂 Estrutura do Projeto
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#video" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎥 Vídeo
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -313,10 +237,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="compose.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    ⚙️ Docker Compose
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="compose.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -327,6 +273,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      📂 Estrutura Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ordem-de-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 Ordem de Inicialização
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explicacao-de-cada-servico" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Explicação de cada serviço:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Explicação de cada serviço:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-nginx-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 web (NGINX Proxy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 api (FastAPI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#db-postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 db (PostgreSQL)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seguranca-e-producao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 Segurança e Produção
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dicas-de-customizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍️ Dicas de Customização
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -424,36 +468,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#explicacao-do-projeto" class="md-nav__link">
+  <a href="#estrutura-geral" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 Explicação do Projeto
+      📂 Estrutura Geral
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#endpoints-da-api" class="md-nav__link">
+  <a href="#ordem-de-inicializacao" class="md-nav__link">
     <span class="md-ellipsis">
-      📦 Endpoints da API
+      🔁 Ordem de Inicialização
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#estrutura-do-projeto" class="md-nav__link">
+  <a href="#explicacao-de-cada-servico" class="md-nav__link">
     <span class="md-ellipsis">
-      📂 Estrutura do Projeto
+      🔍 Explicação de cada serviço:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Explicação de cada serviço:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-nginx-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 web (NGINX Proxy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 api (FastAPI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#db-postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 db (PostgreSQL)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seguranca-e-producao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 Segurança e Produção
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#video" class="md-nav__link">
+  <a href="#dicas-de-customizacao" class="md-nav__link">
     <span class="md-ellipsis">
-      🎥 Vídeo
+      ✍️ Dicas de Customização
     </span>
   </a>
   
@@ -475,70 +561,77 @@
 
 
 
-<h1 id="documentacao-api-de-scraping-b3-com-autenticacao-jwt">📊 Documentação - API de Scraping B3 com Autenticação JWT</h1>
-<p>Este projeto consiste em uma API RESTful desenvolvida com FastAPI, que realiza scraping de dados da B3 (Bolsa de Valores do Brasil) e disponibiliza os dados para usuários autenticados via JWT.</p>
+<h1 id="arquivo-docker-composeyaml">⚙️ Arquivo <code>docker-compose.yaml</code></h1>
+<p>Este arquivo é responsável por orquestrar os três principais contêineres do projeto: <strong>NGINX</strong>, <strong>FastAPI</strong> e <strong>PostgreSQL</strong>. Ele define a forma como esses serviços interagem entre si e com o ambiente externo.</p>
 <hr />
-<h2 id="explicacao-do-projeto">🔍 Explicação do Projeto</h2>
-<p>O sistema realiza scraping dos dados da B3 com informações como data, abertura, fechamento, volume, entre outros.</p>
-<ul>
-<li>Linguagem principal: <strong>Python</strong></li>
-<li>Framework: <strong>FastAPI</strong></li>
-<li>Containerização com <strong>Docker</strong></li>
-<li>Banco de dados: <strong>PostgreSQL</strong></li>
-<li>Balanceamento e proxy reverso com <strong>NGINX</strong></li>
-</ul>
-<hr />
-<h2 id="endpoints-da-api">📦 Endpoints da API</h2>
-<table>
-<thead>
-<tr>
-<th>Método</th>
-<th>Rota</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>POST</td>
-<td><code>/registrar</code></td>
-<td>Cria novo usuário</td>
-</tr>
-<tr>
-<td>POST</td>
-<td><code>/login</code></td>
-<td>Retorna token JWT</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/consultar</code></td>
-<td>Consulta dados (requer JWT)</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="estrutura-do-projeto">📂 Estrutura do Projeto</h2>
-<div class="highlight"><pre><span></span><code>Cloud_OpenStack/
-├── api_rest/
-│   ├── api/
-│   │   ├── app/
-│   │   │   ├── app.py
-│   │   │   ├── auth.py
-│   │   │   ├── database.py
-│   │   │   ├── models.py
-│   │   │   ├── schemas.py
-│   │   │   └── scraping.py
-│   │   ├── Dockerfile
-│   │   └── requirements.txt
-│   ├── nginx/
-│   │   ├── Dockerfile
-│   │   └── default.conf
-│   ├── .env
-│   └── docker-compose.yaml
+<h2 id="estrutura-geral">📂 Estrutura Geral</h2>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cloud</span>
+
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">web</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fernandokoelle/nginx_proxy</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;8000:80&quot;</span>
+<span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">api</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">on-failure</span>
+<span class="w">  </span><span class="nt">api</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">api</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fernandokoelle/scraping_de_dados_b3:latest</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">DATABASE_URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgresql://cloud:secret@db:5432/cloud</span>
+<span class="w">      </span><span class="nt">SECRET_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${SECRET_KEY:-supersegredo}</span>
+<span class="w">      </span><span class="nt">ADMIN_SECRET</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${ADMIN_SECRET:-123}</span>
+<span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">on-failure</span>
+
+<span class="w">  </span><span class="nt">db</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres:latest</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span>
+<span class="w">      </span><span class="nt">POSTGRES_DB</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${POSTGRES_DB:-cloud}</span>
+<span class="w">      </span><span class="nt">POSTGRES_USER</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${POSTGRES_USER:-cloud}</span>
+<span class="w">      </span><span class="nt">POSTGRES_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${POSTGRES_PASSWORD:-secret}</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">on-failure</span>
 </code></pre></div>
 <hr />
-<h2 id="video">🎥 Vídeo</h2>
+<h2 id="ordem-de-inicializacao">🔁 Ordem de Inicialização</h2>
+<ol>
+<li>O serviço <code>db</code> é iniciado primeiro (PostgreSQL).</li>
+<li>Em seguida, a <code>api</code>, que depende do banco de dados para iniciar corretamente.</li>
+<li>Por fim, o <code>web</code>, que age como <strong>proxy reverso</strong>, redirecionando as requisições da porta 8000 para a API.</li>
+</ol>
+<hr />
+<h2 id="explicacao-de-cada-servico">🔍 Explicação de cada serviço:</h2>
+<h3 id="web-nginx-proxy">🧭 <code>web</code> (NGINX Proxy)</h3>
 <ul>
-<li><a href="https://youtu.be/vVhMcYC5w3g">Demonstração curta do funcionamento</a></li>
+<li>Função: redirecionar requisições externas para a API.</li>
+<li>Porta exposta: <code>8000 -&gt; 80</code>.</li>
+</ul>
+<h3 id="api-fastapi">🧠 <code>api</code> (FastAPI)</h3>
+<ul>
+<li>Responsável por processar requisições, autenticar usuários e interagir com o banco de dados.</li>
+<li>Usa variáveis de ambiente para configuração.</li>
+</ul>
+<h3 id="db-postgresql">🧱 <code>db</code> (PostgreSQL)</h3>
+<ul>
+<li>Banco de dados da aplicação.</li>
+<li>Usa senha e nome de banco definidos no <code>.env</code>.</li>
+</ul>
+<hr />
+<h2 id="seguranca-e-producao">🔐 Segurança e Produção</h2>
+<ul>
+<li>Nunca exponha portas desnecessárias. Somente a porta <code>8000</code> está visível neste projeto.</li>
+<li>As credenciais sensíveis estão externalizadas via <code>.env</code>, não deixe esse arquivo público.</li>
+<li>Utilize imagens validadas no Docker Hub para ambientes de produção.</li>
+</ul>
+<hr />
+<h2 id="dicas-de-customizacao">✍️ Dicas de Customização</h2>
+<ul>
+<li>Para rodar em uma porta diferente, altere <code>8000:80</code> para <code>sua_porta:80</code> na seção <code>web</code>.</li>
+<li>Você pode adicionar um volume para persistência dos dados do banco, se desejar.</li>
+<li>Para logar e testar, acesse <code>http://localhost:8000/docs</code> no navegador.</li>
 </ul>
 <hr />
 
