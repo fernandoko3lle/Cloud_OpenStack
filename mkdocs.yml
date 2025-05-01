@@ -1,4 +1,6 @@
 site_name: 📊 API RESTful com Autenticação JWT e Scraping de Dados da B3
+site_url: https://fernandoko3lle.github.io/Cloud_OpenStack
+use_directory_urls: false
 theme:
   name: material
 markdown_extensions:
@@ -7,7 +9,7 @@ markdown_extensions:
   - pymdownx.superfences
 docs_dir: docs
 nav:
-  - 📊 Overview: Overview.md
+  - 📊 Overview: index.md
   - 📤 Publicação no Docker Hub: dockerhub.md
   - ⚙️ Docker Compose: compose.md 
   - 💻 Como rodar localmente: Rodando_Localmente.md
