@@ -9,7 +9,3 @@ Criação de uma cloud própria, desde da infraestrutura até a aplicação. Usa
 ### A documentação está disponível em:
 
 - [https://fernandoko3lle.github.io/Cloud_OpenStack/](https://fernandoko3lle.github.io/Cloud_OpenStack/)
-
-### Projeto desenvolvido por: 
-- Fernando Koelle
-- André Frugis 
