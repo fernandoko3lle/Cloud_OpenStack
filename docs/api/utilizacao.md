@@ -15,13 +15,13 @@ Para registrar um novo usuário, envie um `POST` para `/registrar` com:
 
 ### 📤 Requisição de Registro
 
-<img src="img/reg_request.png" alt="Requisição de Registro" width="800"/>
+<img src="../img/api/reg_request.png" alt="Requisição de Registro" width="800"/>
 
 ---
 
 ### 📥 Resposta Esperada
 
-<img src="img/reg_response.png" alt="Resposta de Registro" width="800"/>
+<img src="../img/api/reg_response.png" alt="Resposta de Registro" width="800"/>
 
 ---
 
@@ -46,13 +46,13 @@ Você receberá um token JWT. Exemplo:
 
 ### 📤 Requisição de Login
 
-<img src="img/log_request.png" alt="Requisição de Login" width="800"/>
+<img src="../img/api/log_request.png" alt="Requisição de Login" width="800"/>
 
 ---
 
 ### 📥 Resposta com Token
 
-<img src="img/log_response.png" alt="Resposta de Login" width="800"/>
+<img src="../img/api/log_response.png" alt="Resposta de Login" width="800"/>
 
 ---
 
@@ -74,7 +74,7 @@ Ao testar via navegador, é comum esquecer de incluir o token JWT, o que resulta
 
 ### ❌ Tentativa de acesso sem autenticação
 
-<img src="img/err_token.png" alt="Erro de token ausente" width="800"/>
+<img src="../img/api/err_token.png" alt="Erro de token ausente" width="800"/>
 
 ---
 
@@ -82,7 +82,7 @@ Ao testar via navegador, é comum esquecer de incluir o token JWT, o que resulta
 
 No campo **Authorization**, selecione o tipo `Bearer` e cole o token JWT retornado:
 
-<img src="img/token.png" alt="Campo de autorização com token" width="800"/>
+<img src="../img/api/token.png" alt="Campo de autorização com token" width="800"/>
 
 ---
 
@@ -90,7 +90,7 @@ No campo **Authorization**, selecione o tipo `Bearer` e cole o token JWT retorna
 
 Se o token estiver presente, um **ícone de cadeado fechado** deve aparecer na interface:
 
-<img src="img/simb.png" alt="Símbolo de autenticação ativa" width="800"/>
+<img src="../img/api/simb.png" alt="Símbolo de autenticação ativa" width="800"/>
 
 ---
 
@@ -98,6 +98,6 @@ Se o token estiver presente, um **ícone de cadeado fechado** deve aparecer na i
 
 Após o token ser corretamente inserido, a requisição protegida `/consultar` retorna os dados esperados:
 
-<img src="img/consulta.png" alt="Consulta com token" width="800"/>
+<img src="../img/api/consulta.png" alt="Consulta com token" width="800"/>
 
 </details>

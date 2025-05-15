@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 import os
 
 from app.models import Base, User
+from socket import gethostname
 from app.database import get_db, engine
 from app.schemas import UserCreate, UserLogin, Token
 from app.auth import (
@@ -69,3 +70,8 @@ def consultar(credentials: HTTPAuthorizationCredentials = Depends(security)):
 
     dados = get_bovespa_data()
     return {"dados": dados}
+
+# Endpoint para conferir o loadbalance
+@app.get("/health_check", status_code=200)
+def health_check():
+    return {"health_check": gethostname()}

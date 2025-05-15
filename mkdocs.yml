@@ -1,20 +1,63 @@
-site_name: 📊 API RESTful com Autenticação JWT e Scraping de Dados da B3
+site_name: Cloud
 site_url: https://fernandoko3lle.github.io/Cloud_OpenStack
 use_directory_urls: false
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections   # separa cada item de topo em “seções” na sidebar
+    #- navigation.expand  
+    - navigation.instant
+    - navigation.instant.progress
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 docs_dir: docs
-nav:
-  - 📊 Overview: index.md
-  - 📤 Publicação no Docker Hub: dockerhub.md
-  - ⚙️ Docker Compose: compose.md 
-  - 💻 Como rodar localmente: Rodando_Localmente.md
-  - 📸 Ulitização: utilizacao.md
-  - 🛡️ Seguranca e Arquitetura : seguranca.md
-
-
+nav: 
+  - index.md
+  - MaaS: 
+    - maas/intro_maas.md
+    - relatorio:
+      - teste: maas/relatorio.md
+  - JUJU: 
+    - baixando:
+      - teste: open/teste
+  - OpenStack:
+    - 🎯 objetivo: open/objetivo.md
+    - Criando a Infraestrutura: 
+      - 🔌 Deployment e Integração: open/infra.md
+      - 🔐 Vault + Certificado CA: open/vault.md
+      - ✅ Verificação do Estado: open/status.md
+    - Configurando o Openstack:
+      -  🛠️ Configuração Inicial: open/config_ini.md
+      - 🖼️ Criando Imagens e Flavors: open/img_flavor.md
+      - 🔀 Redes + Roteador: open/rede_roteador.md
+      - 🔒 Conexão e Segurança: open/conex_seg.md
+      - 🚀 Lançamento de Instâncias: open/instancias.md
+      - 📈 Escalabilidade: open/escala.md
+    - Aplicação no Openstack:
+      - 🚀 Subindo aplicação: open/subindo_api.md
+      - 📊 Validação de Flavor: open/desempenho.md
+      - 🌐 Topologia de Rede: open/topologia.md
+      - ⚖️ Load Balancer: open/lb.md
+  - "SLA, DR e IaC":  
+    - teste: user/teste.md
+  - "Dockerização":
+      - 📊 Overview: api/overview.md
+      - 📤 Publicação no Docker Hub: api/dockerhub.md
+      - ⚙️ Docker Compose: api/compose.md 
+      - 💻 Como rodar localmente: api/Rodando_Localmente.md
+      - 📸 Ulitização: api/utilizacao.md
+      - 🛡️ Seguranca e Arquitetura : api/seguranca.md
+  - Projeto AWS: 
+    - aws_home: aws.md
+  # - Dockerização:
+    
 
