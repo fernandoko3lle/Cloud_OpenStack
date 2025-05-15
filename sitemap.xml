@@ -2,26 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/index.html</loc>
-         <lastmod>2025-05-01</lastmod>
+         <lastmod>2025-05-15</lastmod>
     </url>
     <url>
-         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/Rodando_Localmente.html</loc>
-         <lastmod>2025-05-01</lastmod>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/aws.html</loc>
+         <lastmod>2025-05-15</lastmod>
     </url>
     <url>
-         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/compose.html</loc>
-         <lastmod>2025-05-01</lastmod>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/api/Rodando_Localmente.html</loc>
+         <lastmod>2025-05-15</lastmod>
     </url>
     <url>
-         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/dockerhub.html</loc>
-         <lastmod>2025-05-01</lastmod>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/api/compose.html</loc>
+         <lastmod>2025-05-15</lastmod>
     </url>
     <url>
-         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/seguranca.html</loc>
-         <lastmod>2025-05-01</lastmod>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/api/dockerhub.html</loc>
+         <lastmod>2025-05-15</lastmod>
     </url>
     <url>
-         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/utilizacao.html</loc>
-         <lastmod>2025-05-01</lastmod>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/api/overview.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/api/seguranca.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/api/utilizacao.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/img/maas/main.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/maas/intro_maas.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/maas/relatorio.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/conex_seg.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/config_ini.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/desempenho.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/escala.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/home.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/img_flavor.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/info.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/infra.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/instancias.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/lb.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/objetivo.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/rede_roteador.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/status.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/subindo_api.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/teste.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/topologia.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/open/vault.html</loc>
+         <lastmod>2025-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://fernandoko3lle.github.io/Cloud_OpenStack/user/teste.html</loc>
+         <lastmod>2025-05-15</lastmod>
     </url>
 </urlset>
