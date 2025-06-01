@@ -71,4 +71,21 @@ Para configurar cada instância:
    # Repita em api-2, db-server e lb-nginx conforme necessário.
    ```
 
+## Servers em que cada intância foi alocada: 
+
+1. API-1: 
+![Server API-1](../img/open/tarefas/server_api1.png) 
+
+2. API-2: 
+![Server API-2](../img/open/tarefas/server_api2.png) 
+
+3. base de dados: 
+![Server db](../img/open/tarefas/server_db.png) 
+
+4. NGINX: 
+![Server lb](../img/open/tarefas/server_lb.png) 
+
+
+
+
 > **Observação**: detalhes de configuração de NGINX e regras de NAT estão documentados nas seções de Load Balancer e Topologia de Rede.

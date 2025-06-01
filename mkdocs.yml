@@ -23,12 +23,9 @@ docs_dir: docs
 nav: 
   - index.md
   - MaaS: 
-    - maas/intro_maas.md
-    - relatorio:
-      - teste: maas/relatorio.md
+    - Relatorio: maas/relatorio.md
   - JUJU: 
-    - baixando:
-      - teste: open/teste
+    - Relatorio: juju/main.md
   - OpenStack:
     - 🎯 objetivo: open/objetivo.md
     - Criando a Infraestrutura: 
@@ -48,7 +45,10 @@ nav:
       - 🌐 Topologia de Rede: open/topologia.md
       - ⚖️ Load Balancer: open/lb.md
   - "SLA, DR e IaC":  
-    - teste: user/teste.md
+    - SetUp: Iac/setUp.md
+    - Terraform: Iac/terraform.md
+    - Resultados: Iac/resultados.md
+    - Exercicio: Iac/exercicio.md 
   - "Dockerização":
       - 📊 Overview: api/overview.md
       - 📤 Publicação no Docker Hub: api/dockerhub.md
@@ -57,7 +57,6 @@ nav:
       - 📸 Ulitização: api/utilizacao.md
       - 🛡️ Seguranca e Arquitetura : api/seguranca.md
   - Projeto AWS: 
-    - aws_home: aws.md
-  # - Dockerização:
+    - AWS: aws/aws.md
     
 
