@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#projeto-cloud-privada-hibrida-do-zero" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -348,6 +353,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="index.html" class="md-nav__link md-nav__link--active">
         
   
@@ -359,6 +377,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projeto-cloud-privada-hibrida-do-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Projeto — Cloud Privada &amp; Híbrida do Zero
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Projeto — Cloud Privada &amp; Híbrida do Zero">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principais-entregas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principais Entregas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1456,6 +1515,38 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projeto-cloud-privada-hibrida-do-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Projeto — Cloud Privada &amp; Híbrida do Zero
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Projeto — Cloud Privada &amp; Híbrida do Zero">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principais-entregas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principais Entregas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1472,12 +1563,39 @@
 
   <h1>Home</h1>
 
+<h2 id="projeto-cloud-privada-hibrida-do-zero">🚀 Projeto — Cloud Privada &amp; Híbrida do Zero</h2>
+<p><em>(MAAS + Juju + OpenStack • Terraform • AWS Lightsail • FastAPI/Swagger)</em>  </p>
+<p>Transformei um <strong>kit de laboratório</strong> — <strong>6 Intel NUCs</strong> (10 GB → 32 GB RAM, SSD 120 GB), <strong>switch D-Link 28 portas</strong> e <strong>roteador TP-Link TL-R470T+</strong> — em uma <strong>nuvem privada completa</strong>, posteriormente integrada à Amazon Lightsail.</p>
+<h3 id="principais-entregas">Principais Entregas</h3>
 <ul>
-<li>Criação de uma cloud privada, desde da infraestrutura até a aplicação. Usando o MaaS + JUJU + OpenStack.</li>
-<li>Automação de processosno OpenStack com Terraform. </li>
-<li>Criação de uma API simples com intarface swagger para testes.</li>
-<li>Gerenciamento da API em cloud privada e pública (AWS).</li>
+<li><strong>Provisionamento bare-metal</strong>  </li>
+<li>Descoberta PXE e alocação automática de nós via <strong>MAAS</strong>.  </li>
+<li>
+<p>Orquestração de charms com <strong>Juju</strong> para implantar <strong>OpenStack</strong> (Keystone, Nova, Neutron, Cinder, Horizon, Ceph).</p>
+</li>
+<li>
+<p><strong>Automação &amp; IaC</strong>  </p>
+</li>
+<li>
+<p>Scripts <strong>Terraform</strong> para rede, instâncias, IPs flutuantes e Security Groups — ambiente recriado em minutos.</p>
+</li>
+<li>
+<p><strong>Serviços &amp; Aplicação</strong>  </p>
+</li>
+<li>Criação de uma <strong>API REST</strong> (FastAPI) containerizada, documentada com <strong>Swagger</strong>.  </li>
+<li>
+<p>Pipeline híbrido: deployment na cloud privada + replicação na <strong>AWS Lightsail</strong> para comparativo de performance e custo.</p>
+</li>
+<li>
+<p><strong>Observabilidade &amp; Escala</strong>  </p>
+</li>
+<li>Dashboards Horizon, métricas Ceilometer e health-checks personalizados.  </li>
+<li>Adição dinâmica de nós de compute e storage (Ceph OSD) <strong>sem downtime</strong>.</li>
 </ul>
+<blockquote>
+<p><strong>Tech stack:</strong> MAAS • Juju • OpenStack • Terraform • Ceph • FastAPI • Docker • NGINX • <strong>AWS Lightsail</strong><br />
+<strong>Resultados:</strong> ambiente 100 % automatizado, escalável horizontalmente, com tempo de provisionamento <strong>↓ 85 %</strong> e testes de API concluídos em cenários <strong>privado ↔ público</strong>.</p>
+</blockquote>
 
 
 
